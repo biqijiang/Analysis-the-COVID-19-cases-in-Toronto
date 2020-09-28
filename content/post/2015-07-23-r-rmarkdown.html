@@ -1,0 +1,75 @@
+---
+title: "Analysis the COVID-19 cases in Toronto "
+author: "biqi jiang"
+date: 2020-09-27T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+
+
+<div id="abstract" class="section level1">
+<h1>Abstract</h1>
+<p>As the COVID-19 spreads rapidly around the world, it has a significant impact on our life style. It can also endanger someone’s physical health. In this paper we explore the COVID-19 cases in Toronto, and to finding what factors in each variables are the most infect by COVID-19. Thus to pay attention on it.</p>
+</div>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>COVID-19 is an infectious disease, and the first case occurred in Wuhan, China, it has resulted in an ongoing pandemic. The disease spreads very easily and sustainably through the air, most often when they are close contact with a case. Therefore the government is advising people to wear masks, wash their hands often and keep a social distance[2]. The COVID-19 cases dataset has all confirmed and probable cases management by Toronto Public Health since the first case was reported in Toronto in January. It includes age group, outbreak associated, source of infection, client gender, and other variables related to COVID-19. The dataset was collected from the provincial communicable disease reporting system and Toronto’s custom COVID-19 case management system[1]. It has some specific findings after analysis of the dataset. I am going to discuss more about what factors in each variables are the most infect by COVID-19.. Analyzing this dataset can not only help us understand the epidemic disease deeply, but also can increase the awareness of self-prevention. To get through this difficult time safely.</p>
+</div>
+<div id="data-introduction" class="section level1">
+<h1>Data Introduction</h1>
+<p>Outbreak associated: sporadic and outbreak associated (it was associated with outbreaks of COVID-19 in Toronto healthcare institutions and healthcare settings).
+Age group: It describes the age at which the infection occurred and it divides 10 group, which is less than or equal to 19, 20-29 years, 30-39 years, 40-49 years, 50-59 years, 60-69 years, 70-79 years, 80-89 years, more than 90, and unknown.<br />
+Source of infection: A possible way to become infected with the COVID-19.
+It divides to travel, close contact with a case, institution setting, healthcare setting, community, pending, unknown/missing, and NA.
+Client gender: female, male, and unknown.</p>
+</div>
+<div id="figures" class="section level1">
+<h1>Figures</h1>
+<div id="figure-1-age-group" class="section level2">
+<h2>Figure 1: age group</h2>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+Infections are frequently happen in age group between 20 to 29 years old. The number of people infected is more than 3000. Infections are rarely happen in age group between 70 to 79 years old and 90 and older. The number of people infected is around 1000.</p>
+</div>
+<div id="figure-2-source-of-infection" class="section level2">
+<h2>Figure 2: source of infection</h2>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+Infections are frequently happen in close contact with a case.The number of people infected is more than 6000.
+Infections are rarely happen in pending.The number of people infected is around 100.</p>
+</div>
+<div id="figure-3-client-gender" class="section level2">
+<h2>Figure 3: client gender</h2>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+Infections happen in female is more than male.</p>
+</div>
+<div id="figure-4-outbreak-associated" class="section level2">
+<h2>Figure 4: outbreak associated</h2>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+Infections are frequently happen in sporadic.
+Infections are rarely happen in outbreak associated.</p>
+</div>
+</div>
+<div id="figures-discussion" class="section level1">
+<h1>Figures Discussion</h1>
+<p>To analysis what factors in each variables are the most infect by COVID-19. I use the bar plot to explore some variables that I am interest in. According to figure 1, the variable of age group, and the infections are frequently happen in age group between 20 to 29 years old. The number of people infected is more than 3000. Infections are rarely happen in age group between 70 to 79 years old and 90 and older. The number of people infected is around 1000. The bar plot of source of infection (figure2) shows that more than 6000 people were infect in close contact with a case. It means that disease spreads very easily when they are physically close. From figure 3, we can see women are more likely to be infected than men. To analysis the bar plot of outbreak associated (figure4), the cases of sporadic are more than outbreak associated.</p>
+</div>
+<div id="limitation" class="section level1">
+<h1>Limitation</h1>
+<p>There are some limitations to COVID-19 cases dataset. As we are experiencing COVID-19, this data will be updated weekly as the epidemic evolves. The data reported by Toronto Public Health may also differ from other sites because of the report date and source of data extraction.</p>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<ol style="list-style-type: decimal">
+<li><p>Sharla Gelfand (2020). opendatatoronto: Access the City of Toronto
+Open Data Portal. <a href="https://sharlagelfand.github.io/opendatatoronto/" class="uri">https://sharlagelfand.github.io/opendatatoronto/</a>,
+<a href="https://github.com/sharlagelfand/opendatatoronto/" class="uri">https://github.com/sharlagelfand/opendatatoronto/</a>.</p></li>
+<li><p>Coronavirus disease 2019. (2020, September 25). Retrieved September 27, 2020, from <a href="https://en.wikipedia.org/wiki/Coronavirus_disease_2019" class="uri">https://en.wikipedia.org/wiki/Coronavirus_disease_2019</a></p></li>
+<li><p>Wickham et al., (2019). Welcome to the tidyverse. Journal
+of Open Source Software, 4(43), 1686,
+<a href="https://doi.org/10.21105/joss.01686" class="uri">https://doi.org/10.21105/joss.01686</a></p></li>
+<li><p>Sharla Gelfand (2020). opendatatoronto: Access the City of
+Toronto Open Data Portal.
+<a href="https://sharlagelfand.github.io/opendatatoronto/" class="uri">https://sharlagelfand.github.io/opendatatoronto/</a>,
+<a href="https://github.com/sharlagelfand/opendatatoronto/" class="uri">https://github.com/sharlagelfand/opendatatoronto/</a>.</p></li>
+</ol>
+</div>
